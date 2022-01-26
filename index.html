@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shablon</title>
+    <script src="./node_modules/html2canvas/dist/html2canvas.min.js" type="text/javascript"></script> 
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="options">
+        <input id="file_path" type="file" accept=".jpg, .jpeg, .png">
+        <div class="inputNameWrapper">
+            <input id="inputName"  type="text" placeholder="...введите имя">
+            <div class="ranges">
+                <div class="wrapperNameFontSize_S">
+                    <span class="nameFontSize_S-counter">                     
+                    </span>               
+                    <input type="range" value="24" list="tickmarks" name="" id="nameFontSize_S" step="1" min="12" max="72">
+                    <label for="nameFontSize_S">Размер имени для сторис</label>
+                </div> 
+                
+                <div class="wrapperNameFontSize_Ip">
+                    <span class="nameFontSize_Ip-counter">
+                        
+                    </span>
+                    <input type="range" value="18" list="tickmarks" name="" id="nameFontSize_Ip" step="1" min="12" max="72">
+                    <label for="nameFontSize_Ip">Размер имени для Инстаграм поста</label>
+                </div>
+
+                <div class="wrapperNameFontSize_Fb">
+                    <span class="nameFontSize_Fb-counter">
+
+                    </span>
+                    <input type="range" value="18" list="tickmarks" name="" id="nameFontSize_Fb" step="1" min="12" max="72">
+                    <label for="nameFontSize_Fb">Размер имени для Facebook</label>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="inputCountryWrapper">
+            <input id="inputCountry"  type="text" placeholder="...введите страну">
+            <div class="ranges">
+                <div class="wrapperCountryFontSize_S">
+                    <span class="countryFontSize_S-counter">                     
+                    </span>               
+                    <input type="range" value="20" list="tickmarks" name="" id="countryFontSize_S" step="1" min="12" max="72">
+                    <label for="countryFontSize_S">Размер страны для сторис</label>
+                </div> 
+                
+                <div class="wrapperCountryFontSize_Ip">
+                    <span class="countryFontSize_Ip-counter">
+                        
+                    </span>
+                    <input type="range" value="11" list="tickmarks" name="" id="countryFontSize_Ip" step="1" min="12" max="72">
+                    <label for="countryFontSize_Ip">Размер страны для Инстаграм поста</label>
+                </div>
+
+                <div class="wrapperCountryFontSize_Fb">
+                    <span class="countryFontSize_Fb-counter">
+
+                    </span>
+                    <input type="range" value="11" list="tickmarks" name="" id="countryFontSize_Fb" step="1" min="12" max="72">
+                    <label for="countryFontSize_Fb">Размер страны для Facebook</label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="inputTextWrapper">
+            <input id="inputText" type="text" placeholder="...введите дополнительный текст">
+            <div class="ranges">
+                <div class="wrapperTextFontSize_S">
+                    <span class="textFontSize_S-counter">                     
+                    </span>               
+                    <input type="range" value="15" list="tickmarks" name="" id="textFontSize_S" step="1" min="12" max="72">
+                    <label for="textFontSize_S">Размер информационного текста для сторис</label>
+                </div> 
+                
+                <div class="wrapperTextFontSize_Ip">
+                    <span class="textFontSize_Ip-counter">
+                        
+                    </span>
+                    <input type="range" value="10" list="tickmarks" name="" id="textFontSize_Ip" step="1" min="12" max="72">
+                    <label for="textFontSize_Ip">Размер информационного текста для Инстаграм поста</label>
+                </div>
+
+                <div class="wrapperTextFontSize_Fb">
+                    <span class="textFontSize_Fb-counter">
+
+                    </span>
+                    <input type="range" value="10" list="tickmarks" name="" id="textFontSize_Fb" step="1" min="12" max="72">
+                    <label for="textFontSize_Fb">Размер информационного текста для Facebook</label>
+                </div>
+
+            </div>
+        </div>
+        <div class="btn-container">
+            <button id="btn" class="btn btn-primary">Скачать все пикчи</button>
+            <button id="btn-align-center" class="btn btn-secondary">Поставить фото на место</button>
+            <button id="btn-downloadS" class="btn btn-outline-primary">Скачать стори</button>
+            <button id="btn-downloadIp" class="btn btn-outline-success">Скачать Инстапост</button>
+            <button id="btn-downloadFb" class="btn btn-outline-info">Скачать ФБ пост</button>
+        </div>
+        
+    </div>
+    
+    <div class="imageWrapper">
+
+        <div class="wrapperStories" crossorigin="anonymous">
+            <div class="photoSContainer">    
+                <img tabindex="0" src="./content/test.jpg" id='photoS' alt="" draggable="true" class="photo photo-drag">                  
+            </div>
+            <div class="nameSWrapper">
+                <p class="nameS">
+                    Олександр Олександров
+                </p>
+            </div>   
+
+            <div class="countrySWrapper">
+                <p class="countryS">
+                    Київ, Україна
+                </p>
+            </div>
+            
+            <div class="textSWrapper">
+                <p class="textS">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, laudantium!
+                </p>
+
+            </div>
+            <img class="img_S" src="./content/storyBG.png" alt="" srcset="">
+            
+        </div>
+        <div class="optionsS">
+            <div class="verticalFadersStories">
+                <input type="range" title="фото" value="-70" orient="vertical" step="1" max="0" min="-400" id="positionPhotoS" class="verticalFader">
+                <input type="range" title="имя" value="-170" orient="vertical" step="1" max="0" min="-400" id="positionNameS" class="verticalFader">
+                <input type="range" title="страна" value="-235" orient="vertical" step="1" max="0" min="-400" id="positionCountryS" class="verticalFader">
+                <input type="range" title="текст" value="-270" orient="vertical" step="1" max="0" min="-400" id="positionTextS" class="verticalFader">
+            </div>
+            <div class="sizeS input-group-sm">
+                <span>Размер фото</span>
+                <input class="form-check-input" type="range" name="" id="photoRatioS" step='0.1' max='3' min='0' value="1">
+                <span>Размер контейнера</span>
+                <input class="form-check-input" type="range" name="" id="containerRatioS" step='0.1' max='4' min='0' value="1">
+            </div>
+        </div>
+
+        <div class="wrapperInstPost" crossorigin="anonymous">
+            <div class="photoIpContainer">    
+                <img tabindex="0" src="./content/test.jpg" id='photoIp' alt="" draggable="true" class="photo photo-drag">                  
+            </div>   
+            <div class="nameIpWrapper">
+                <p class="nameIp">
+                    Олександр Олександров
+                </p>
+            </div>   
+
+            <div class="countryIpWrapper">
+                <p class="countryIp">
+                    Київ, Україна
+                </p>
+            </div>
+            
+            <div class="textIpWrapper">
+                <p class="textIp">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, laudantium!
+                </p>
+
+            </div>
+            <img class="img_Ip" src="./content/postInstBG.png" alt="" srcset="">
+        </div>
+        <div class="optionsIp">
+            <div class="verticalFadersStories">
+                <input type="range" title="фото" value="-35" orient="vertical" step="1" max="0" min="-250" id="positionPhotoIp" class="verticalFader">
+                <input type="range" title="имя" value="-100" orient="vertical" step="1" max="0" min="-250" id="positionNameIp" class="verticalFader">
+                <input type="range" title="страна" value="-145" orient="vertical" step="1" max="0" min="-250" id="positionCountryIp" class="verticalFader">
+                <input type="range" title="текст" value="-165" orient="vertical" step="1" max="0" min="-250" id="positionTextIp" class="verticalFader">
+            </div>
+            <div class="sizeIp input-group-sm">
+                <span>Размер фото</span>
+                <input class="form-check-input" type="range" name="" id="photoRatioIp" step='0.1' max='3' min='0' value="1">
+                <span>Размер контейнера</span>
+                <input class="form-check-input" type="range" name="" id="containerRatioIp" step='0.1' max='4' min='0' value="1">
+            </div>
+        </div>
+        
+        <div class="wrapperFb" crossorigin="anonymous">
+            <div class="photoFbContainer">               
+                <img src="./content/test.jpg" tabindex="0" alt="" draggable="true" id="photoFb" class="photo photo-drag">       
+            </div>  
+            <div class="nameFbWrapper">
+                <p class="nameFb">
+                    Олександр Олександров
+                </p>
+            </div>   
+
+            <div class="countryFbWrapper">
+                <p class="countryFb">
+                    Київ, Україна
+                </p>
+            </div>
+            
+            <div class="textFbWrapper">
+                <p class="textFb">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, laudantium!
+                </p>
+
+            </div>
+            <img class="img_Fb" src="./content/postFbBG.png" alt="" srcset="">
+        </div>
+        <div class="optionsFb">
+            <div class="verticalFadersStories">
+                <input type="range" title="фото" value="-35" orient="vertical" step="1" max="0" min="-250" id="positionPhotoFb" class="verticalFader">
+                <input type="range" title="имя" value="-100" orient="vertical" step="1" max="0" min="-250" id="positionNameFb" class="verticalFader">
+                <input type="range" title="страна" value="-145" orient="vertical" step="1" max="0" min="-250" id="positionCountryFb" class="verticalFader">
+                <input type="range" title="текст" value="-165" orient="vertical" step="1" max="0" min="-250" id="positionTextFb" class="verticalFader">
+            </div>
+            <div class="sizeFb input-group-sm">
+                <span>Размер фото</span>
+                <input class="form-check-input" type="range" name="" id="photoRatioFb" step='0.1' max='3' min='0' value="1">
+                <span>Размер контейнера</span>
+                <input class="form-check-input" type="range" name="" id="containerRatioFb" step='0.1' max='4' min='0' value="1">
+            </div>
+        </div>
+
+    </div>
+    
+    <script type="module" defer src="./scripts/script.js"></script>
+</body>
+</html>

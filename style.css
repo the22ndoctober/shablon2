@@ -1,0 +1,396 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./font/Gilroy-Extrabold.ttf);
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./font/Gilroy-Heavy.ttf);
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./font/Gilroy-Semibold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./font/Gilroy-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./font/Gilroy-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./font/Gilroy-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./font/Gilroy-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./font/Gilroy-Thin.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(./font/Gilroy-Black.ttf);
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+*{
+    font-family: Gilroy;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+}
+
+.options > *{
+    margin-top: 5px;
+}
+
+input {
+    width: 400px;
+    height: 60px;
+}
+#file_path {
+    height: 30px;
+}
+button{
+    width: 150px;
+    height: 70px;
+    margin: 10px 10px 10px 10px;
+}
+.optionsIp{
+    width: 130px;
+}
+
+
+.verticalFader{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 2px;
+    height: 275px;
+    padding: 0 5px;
+}
+
+.ranges{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    height: 120px;
+}
+.ranges input{
+    margin-left: 12px;
+    margin-left: 12px;
+    width: 150px;
+    height: 30px;
+}
+.ranges > * {
+    height: 40px;
+    align-items: center; 
+    display: flex;
+}
+
+
+
+
+.inputNameWrapper{
+    display: flex;
+}
+.inputCountryWrapper{
+    display: flex;
+}
+
+.inputTextWrapper{
+    display: flex;
+}
+
+.imageWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 0px;
+}
+.imageWrapper > *{
+    margin-left: 10px;
+}
+
+/* ======================================== */
+
+.wrapperStories{
+    width: 270px;
+    height: 480px;
+    transition-duration: 2s;
+    position: relative;
+    font-family: 'Khula', sans-serif;
+}
+.wrapperStories-download{
+    transform: scale(400%);
+}
+.optionsS{
+    display: flex;
+    flex-direction: column;
+}
+.sizeS {
+    display: flex;
+    flex-direction: column;
+}
+.sizeS input{
+    width: 140px;
+}
+
+
+.img_S{
+    width: 270px;
+    height: 480px;
+}
+.photoSContainer{
+    transform-origin: center;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    border-radius: 100%;
+    overflow: hidden;
+    left: 90px;
+    align-items: center;
+}
+
+#photoS{
+    position: absolute;
+    cursor: grab;
+}
+
+.nameSWrapper{
+    width:100%;
+    height: 50px;
+    position: absolute;
+}
+.nameS{ 
+    word-wrap: break-word;
+    line-height: 1.1;
+    margin: 0 auto;
+    font-weight: 700;
+    width: 180px;
+    height: 60px;
+    /* font-size: 100%; */
+    text-align: center;
+}
+.countrySWrapper{
+    position: absolute;
+    width: 100%;
+}
+.countryS{
+    word-wrap: break-word;
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 0 auto;
+    width: 180px;
+    height: 60px;
+    text-align: center;
+    
+}
+.textSWrapper{
+    
+    position: absolute;
+    width: 100%;
+}
+.textS{
+    word-wrap: break-word;
+    margin: 0 auto;
+    font-weight: 400;
+    line-height: 1.1;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+}
+
+/* ============================================ */
+
+.wrapperInstPost{
+    width: 270px;
+    height: 270px;
+    position: relative;
+    font-family: 'Khula', sans-serif;
+}
+.img_Ip{
+    width: 270px;
+    height: 270px;
+}
+.optionsIp{
+    display: flex;
+    flex-direction: column;
+}
+
+.photoIpContainer{
+    transform-origin: center;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 100%;
+    left: 105px;
+    overflow: hidden;
+}
+#photoIp{
+    position: absolute;
+    cursor: grab;
+}
+.sizeIp input{
+    width: 140px;
+}
+
+.nameIpWrapper{
+    width:100%;
+    height: 50px;
+    position: absolute;
+}
+.nameIp{ 
+    word-wrap: break-word;
+    line-height: 1.1;
+    margin: 0 auto;
+    font-weight: 800;
+    width: 180px;
+    height: 60px;
+    /* font-size: 100%; */
+    text-align: center;
+}
+.countryIpWrapper{
+    position: absolute;
+    width: 100%;
+}
+.countryIp{
+    word-wrap: break-word;
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 0 auto;
+    width: 180px;
+    height: 60px;
+    text-align: center;
+    
+}
+.textIpWrapper{
+    position: absolute;
+    top: 275px;
+    width: 100%;
+}
+.textIp{
+    word-wrap: break-word;
+    margin: 0 auto;
+    font-weight: 400;
+    line-height: 1.1;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+
+}
+
+/* ============================================ */
+
+.wrapperFb{
+    width: 360px;
+    height: 270px;
+    position: relative;
+    font-family: 'Khula', sans-serif;
+}
+.img_Fb{
+    width: 360px;
+    height: 270px;
+}
+
+.photoFbContainer{
+    transform-origin: center;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 100%;
+    left: 150px;
+    overflow: hidden;
+}
+#photoFb{
+    position: absolute;
+    cursor: grab;
+}
+
+.optionsFb{
+    display: flex;
+    flex-direction: column;
+}
+.sizeFb{
+    display: flex;
+    flex-direction: column;
+}
+.sizeFb input{
+    width: 140px;
+}
+
+.nameFbWrapper{
+    width:100%;
+    height: 50px;
+    position: absolute;
+}
+.nameFb{ 
+    word-wrap: break-word;
+    line-height: 1.1;
+    margin: 0 auto;
+    font-weight: 800;
+    width: 180px;
+    height: 60px;
+    /* font-size: 100%; */
+    text-align: center;
+}
+.countryFbWrapper{
+    position: absolute;
+    width: 100%;
+}
+.countryFb{
+    word-wrap: break-word;
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 0 auto;
+    width: 180px;
+    height: 60px;
+    text-align: center;
+    
+}
+.textFbWrapper{
+    position: absolute;
+    top: 275px;
+    width: 100%;
+}
+.textFb{
+    word-wrap: break-word;
+    margin: 0 auto;
+    font-weight: 400;
+    line-height: 1.1;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    top: 260px;
+}
