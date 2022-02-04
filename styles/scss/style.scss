@@ -69,6 +69,11 @@
 p{
     word-wrap: break-word;
 }
+.wrapperStories-download{
+    transform: scale(400%);
+}
+
+
 .options{
     width: 100%;
     display: flex;
@@ -86,6 +91,14 @@ p{
         display: flex;
         flex-direction: column;
         row-gap: 20px;
+
+        ul{
+            padding: 10px 10px;
+            li{
+                display: flex;
+                column-gap: 5px;
+            }
+        }
     }
     &__inputTitle, &__inputText1, &__inputText2, &__inputText3{
         width: 300px;
@@ -104,15 +117,29 @@ p{
     &__container{
         width: 100%;
         display: flex;
-        column-gap: 20px;
+        column-gap: 10px;
+    }
+    &__position{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        ul{
+            padding: 5px;
+        }
     }
 
     &__IS{
         width: 270px;
         height: 480px;
-        background: url(/content/bgIS.png);
-        background-size: contain;
         position: relative;
+    }
+    &__bg-IS{
+        width: 270px;
+        height: 480px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
 
     &__imageContainer-IS{
@@ -154,18 +181,26 @@ p{
     &__IP{
         width: 360px;
         height: 270px;
-        background: url(/content/bgIP.png);
-        background-size: contain;
         position: relative;
         display: flex;
         
     }
+
+    &__bg-IP{
+        width: 360px;
+        height: 270px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
     &__imageContainer-IP{
         width: 110px;
         height: 110px;
         margin: 0 auto;
         overflow: hidden;
-       
+        
 
 
         img{
@@ -208,10 +243,17 @@ p{
     &__FB{
         width: 270px;
         height: 270px;
-        background: url(/content/bgFB.png);
-        background-size: contain;
         position: relative;
         display: flex;
+    }
+
+    &__bg-FB{
+        width: 270px;
+        height: 270px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
 
     &__imageContainer-FB{

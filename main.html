@@ -16,10 +16,10 @@
             <div class="options__imageInput">
                 <input type="file" name="" id="input__photo">
             </div>
-            <input type="text" class="options__inputTitle">
-            <input type="text" class="options__inputText1">
-            <input type="text" class="options__inputText2">
-            <input type="text" class="options__inputText3">
+            <input type="text" placeholder='Имя' class="options__inputTitle">
+            <input type="text" placeholder='Текст1' class="options__inputText1">
+            <input type="text" placeholder='Текст2' class="options__inputText2">
+            <input type="text" placeholder='Текст3' class="options__inputText3">
         </div>
         <div class="options__fonts">
             <div class="options__containerIS">            
@@ -28,10 +28,10 @@
                       Размер шрифта для сторис
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><span>Имя</span><input type="range" name="" id=""><span id="fs-title-IS"></span></li>
-                      <li><span>Текст1</span><input type="range" name="" id=""><span id="fs-text1-IS"></span></li>
-                      <li><span>Текст2</span><input type="range" name="" id=""><span id="fs-text2-IS"></span></li>
-                      <li><span>Текст3</span><input type="range" name="" id=""><span id="fs-text3-IS"></span></li>        
+                      <li><span>Имя</span><input type="range" name=""  value='22' min="1" max="72" step="1" id="fs-title-IS-input"><span id="fs-title-IS">22px</span></li>
+                      <li><span>Текст1</span><input type="range" name="" value='12' min="1" max="72" step="1" id="fs-text1-IS-input"><span id="fs-text1-IS">12px</span></li>
+                      <li><span>Текст2</span><input type="range" name="" value='12' min="1" max="72" step="1" id="fs-text2-IS-input"><span id="fs-text2-IS">12px</span></li>
+                      <li><span>Текст3</span><input type="range" name="" value='12' min="1" max="72" step="1" id="fs-text3-IS-input"><span id="fs-text3-IS">12px</span></li>        
                     </ul>
                 </div>
             </div>
@@ -41,10 +41,10 @@
                       Размер шрифта для Инста постов
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><span>Имя</span><input type="range" name="" id=""><span id="fs-title-IS"></span></li>
-                      <li><span>Текст1</span><input type="range" name="" id=""><span id="fs-text1-IS"></span></li>
-                      <li><span>Текст2</span><input type="range" name="" id=""><span id="fs-text2-IS"></span></li>
-                      <li><span>Текст3</span><input type="range" name="" id=""><span id="fs-text3-IS"></span></li>        
+                      <li><span>Имя</span><input type="range" name="" value='16' min="1" max="72" step="1" id="fs-title-IP-input"><span id="fs-title-IP"></span>16px</li>
+                      <li><span>Текст1</span><input type="range" name="" value='10' min="1" max="72" step="1" id="fs-text1-IP-input"><span id="fs-text1-IP"></span>10px</li>
+                      <li><span>Текст2</span><input type="range" name="" value='10' min="1" max="72" step="1" id="fs-text2-IP-input"><span id="fs-text2-IP"></span>10px</li>
+                      <li><span>Текст3</span><input type="range" name="" value='10' min="1" max="72" step="1" id="fs-text3-IP-input"><span id="fs-text3-IP"></span>10px</li>        
                     </ul>
                 </div>
             </div>
@@ -54,10 +54,10 @@
                       Размер шрифта для Фейсбука
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><span>Имя</span><input type="range" name="" id=""><span id="fs-title-IS"></span></li>
-                      <li><span>Текст1</span><input type="range" name="" id=""><span id="fs-text1-IS"></span></li>
-                      <li><span>Текст2</span><input type="range" name="" id=""><span id="fs-text2-IS"></span></li>
-                      <li><span>Текст3</span><input type="range" name="" id=""><span id="fs-text3-IS"></span></li>        
+                      <li><span>Имя</span><input type="range" name="" value='14' min="1" max="72" step="1" id="fs-title-FB-input"><span id="fs-title-FB">14px</span></li>
+                      <li><span>Текст1</span><input type="range" name="" value='8' min="1" max="72" step="1" id="fs-text1-FB-input"><span id="fs-text1-FB">8px</span></li>
+                      <li><span>Текст2</span><input type="range" name="" value='8' min="1" max="72" step="1" id="fs-text2-FB-input"><span id="fs-text2-FB">8px</span></li>
+                      <li><span>Текст3</span><input type="range" name="" value='8' min="1" max="72" step="1" id="fs-text3-FB-input"><span id="fs-text3-FB">8px</span></li>        
                     </ul>
                 </div>
             </div>
@@ -87,7 +87,65 @@
                 </p>
                 <p class="text3 images__text-IS images__text3-IS">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et recusandae 
-                </p>            
+                </p>  
+                <img src="/content/bgIS.png" alt="" class="images__bg-IS">          
+            </div>
+
+            <div class="images__position">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Фото
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><span>Размер Фото</span><input type="range" name="" value='1' min="0" max="4" step="0.1" id="scale-photo-IS-input"><span id="scale-photo-IS">1</span></li>
+                        <li><span>Размер контейнера</span><input type="range" name="" value='1' min="0" max="4" step="0.1" id="scale-container-IS-input"><span id="scale-container-IS">1</span></li>
+                        <li><span>Позиция Х Фото</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posX-photo-IS-input"><span id="posX-photo-IS">0</span></li>
+                        <li><span>Позиция Y Фото</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posY-photo-IS-input"><span id="posY-photo-IS">0</span></li> 
+                        <li><span>Позиция Х контейнер</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posX-container-IS-input"><span id="posX-container-IS">0</span></li>
+                        <li><span>Позиция Y контейнер</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posY-container-IS-input"><span id="posY-container-IS">0</span></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Имя
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><span>Позиция Х</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posX-title-IS-input"><span id="posX-title-IS">0</span></li>
+                        <li><span>Позиция Y</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posY-title-IS-input"><span id="posY-title-IS">0</span></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Текст1
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><span>Позиция Х</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posX-text1-IS-input"><span id="posX-text1-IS">0</span></li>
+                        <li><span>Позиция Y</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posY-text1-IS-input"><span id="posY-text1-IS">0</span></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Текст2
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><span>Позиция Х</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posX-text2-IS-input"><span id="posX-text2-IS">0</span></li>
+                        <li><span>Позиция Y</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posY-text2-IS-input"><span id="posY-text2-IS">0</span></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Текст3
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><span>Позиция Х</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posX-text3-IS-input"><span id="posX-text3-IS">0</span></li>
+                        <li><span>Позиция Y</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posY-text3-IS-input"><span id="posY-text3-IS">0</span></li>
+                    </ul>
+              </div>
+
+                  
             </div>
 
             <div class="images__IP">
@@ -108,7 +166,65 @@
                     <p class="text3 images__text-IP images__text3-IP">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et recusandae 
                     </p>
+                    <img src="/content/bgIP.png" alt="" class="images__bg-IP">  
                 </div>
+            </div>
+
+            <div class="images__position">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Фото
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><span>Размер Фото</span><input type="range" name="" value='1' min="0" max="4" step="0.1" id="scale-photo-IP-input"><span id="scale-photo-IP">1</span></li>
+                        <li><span>Размер контейнера</span><input type="range" name="" value='1' min="0" max="4" step="0.1" id="scale-container-IP-input"><span id="scale-container-IP">1</span></li>
+                        <li><span>Позиция Х Фото</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posX-photo-IP-input"><span id="posX-photo-IP">0</span></li>
+                        <li><span>Позиция Y Фото</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posY-photo-IP-input"><span id="posY-photo-IP">0</span></li> 
+                        <li><span>Позиция Х контейнер</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posX-container-IP-input"><span id="posX-container-IP">0</span></li>
+                        <li><span>Позиция Y контейнер</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posY-container-IP-input"><span id="posY-container-IP">0</span></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Имя
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><span>Позиция Х</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posX-title-IP-input"><span id="posX-title-IP">0</span></li>
+                        <li><span>Позиция Y</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posY-title-IP-input"><span id="posY-title-IP">0</span></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Текст1
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><span>Позиция Х</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posX-text1-IP-input"><span id="posX-text1-IP">0</span></li>
+                        <li><span>Позиция Y</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posY-text1-IP-input"><span id="posY-text1-IP">0</span></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Текст2
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><span>Позиция Х</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posX-text2-IP-input"><span id="posX-text2-IP">0</span></li>
+                        <li><span>Позиция Y</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posY-text2-IP-input"><span id="posY-text2-IP">0</span></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Текст3
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><span>Позиция Х</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posX-text3-IP-input"><span id="posX-text3-IP">0</span></li>
+                        <li><span>Позиция Y</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posY-text3-IP-input"><span id="posY-text3-IP">0</span></li>
+                    </ul>
+              </div>
+
+                  
             </div>
 
             <div class="images__FB">
@@ -129,7 +245,65 @@
                     <p class="text3 images__text-FB images__text3-FB">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et recusandae 
                     </p>
+                    <img src="/content/bgFB.png" alt="" class="images__bg-FB">  
                 </div>
+            </div>
+
+            <div class="images__position">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Фото
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><span>Размер Фото</span><input type="range" name="" value='1' min="0" max="4" step="0.1" id="scale-photo-FB-input"><span id="scale-photo-FB">1</span></li>
+                        <li><span>Размер контейнера</span><input type="range" name="" value='1' min="0" max="4" step="0.1" id="scale-container-FB-input"><span id="scale-container-FB">1</span></li>
+                        <li><span>Позиция Х Фото</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posX-photo-FB-input"><span id="posX-photo-FB">0</span></li>
+                        <li><span>Позиция Y Фото</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posY-photo-FB-input"><span id="posY-photo-FB">0</span></li> 
+                        <li><span>Позиция Х контейнер</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posX-container-FB-input"><span id="posX-container-FB">0</span></li>
+                        <li><span>Позиция Y контейнер</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posY-container-FB-input"><span id="posY-container-FB">0</span></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Имя
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><span>Позиция Х</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posX-title-FB-input"><span id="posX-title-FB">0</span></li>
+                        <li><span>Позиция Y</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posY-title-FB-input"><span id="posY-title-FB">0</span></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Текст1
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><span>Позиция Х</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posX-text1-FB-input"><span id="posX-text1-FB">0</span></li>
+                        <li><span>Позиция Y</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posY-text1-FB-input"><span id="posY-text1-FB">0</span></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Текст2
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><span>Позиция Х</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posX-text2-FB-input"><span id="posX-text2-FB">0</span></li>
+                        <li><span>Позиция Y</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posY-text2-FB-input"><span id="posY-text2-FB">0</span></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Текст3
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><span>Позиция Х</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posX-text3-FB-input"><span id="posX-text3-FB">0</span></li>
+                        <li><span>Позиция Y</span><input type="range" name="" value='0' min="-400" max="400" step="1" id="posY-text3-FB-input"><span id="posY-text3-FB">0</span></li>
+                    </ul>
+              </div>
+
+                  
             </div>
 
         </div>
